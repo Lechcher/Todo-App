@@ -25,7 +25,7 @@ const renderTasks = () => {
     }
 
     const html = tasks.map((task, index) => `
-<li class="${task.completed ? "tasks__item tasks__item--completed" : 'tasks__item'}" task-index="${index}">
+<li class="${task.completed ? "tasks__item tasks__item--completed" : 'tasks__item'}" data-index="${index}">
 <span class="tasks__title">${escapeHTML(task.title)}</span>
 <div class="tasks__actions">
   <button class="tasks__btn tasks__btn--edit">EDIT</button>
@@ -68,7 +68,8 @@ const addTask = (e) => {
 // Hàm xử lý các hành động trên công việc
 const editTask = (e) => {
     const taskItem = e.target.closest(".tasks__item");
-    const taskIndex = +taskItem.getAttribute("task-index");
+    const taskIndex = +taskItem.dataset.index;
+
     const task = tasks[taskIndex];
 
     if (e.target.closest(".tasks__btn--edit")) {

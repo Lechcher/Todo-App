@@ -1,15 +1,27 @@
 # Introduction
-Template for HTML/CSS/JS project.
+The Todo-App was made by Lechcher
 
 # Get started
+### Create a task
+- #### Enter the value into the input field.
+- #### Click "Add" button or press "Enter".
+![Add](./assets/images/1.png)
+![Title](./assets/images/2.png)
+![Edit](./assets/images/3.png)
 
-- Click the **Run** button to run the project.
-![Run](https://lf-cdn.marscode.com/obj/eden-sg/ljhwz_lkpkbvsj/ljhwZthlaukjlkulzlp/project_template/prod/17230fef56b045aa48b889b2781899227bde119f/images/native_html_css_js/run.jpeg)
+### Edit a task
+- #### Click on the task to edit.
+- #### Enter edit input field.
+![Edit](./assets/images/3.png)
+![Edit](./assets/images/4.png)
 
-- Go to **Preview** and watch it live update.
-![Preview](https://lf-cdn.marscode.com/obj/eden-sg/ljhwz_lkpkbvsj/ljhwZthlaukjlkulzlp/project_template/prod/17230fef56b045aa48b889b2781899227bde119f/images/native_html_css_js/preview.jpeg)
+### Mark a task as completed
+-  Click on the task to mark as completed.
+![Edit](./assets/images/5.png)
+![Edit](./assets/images/6.png)
 
-By default, MarsCode provide you with a default running configuration, you can modify it in the **.vscode/launch.json**. Refer to [Visual Studio Code's doc](https://code.visualstudio.com/docs/editor/debugging) for how to configure launch.json.
-
-# Help
-If you need help, you might be able to find an answer in our [docs](https://docs.marscode.com/). Feel free to report bugs and give us feedback [here](https://discord.gg/qtVMXEDbRw).
+# Delete a task
+-  Click on the task to delete.
+![Edit](./assets/images/7.png)
+![Edit](./assets/images/1.png)
+---
