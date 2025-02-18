@@ -1,0 +1,132 @@
+/* ==== Common ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #1a261a;
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+input, button, textarea, select {
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+button {
+    background: transparent;
+    border: none;
+}
+
+/* ==== Main ==== */
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+}
+    /* == Page Hading == */
+    .page_heading {
+        font-size: 2.4rem;
+    }
+
+    /* == Form == */
+    .todo__form {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+        .todo__input, .todo__btn {
+            padding: 8px 12px;
+            border-radius: 8px;
+            border: 1px solid #fff;
+            background: transparent;
+            font-weight: 600;
+        }
+
+        .todo__input {
+            flex: 1;
+        }
+
+        .todo__btn {
+            margin-left: 10px;
+            flex-shrink: 0;
+            cursor: pointer;
+        }
+    
+    /* == Task list == */
+    .tasks__list {
+        display: flex;
+        flex-flow: column;
+        gap: 10px;
+        margin-top: 30px;
+    }
+
+        /* Tasks Item */
+        .tasks__item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 12px;
+            border-radius: 8px;
+            border: 1px solid #ea9652;
+        }
+
+        .tasks__title {
+            flex: 1;
+        }
+
+        .tasks__actions {
+            display: flex;
+            gap: 16px;
+        }
+
+            .tasks__btn {
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                font-weight: 600;
+            }
+
+            .tasks__btn--edit {
+                color: #50ad7e;
+            }
+
+            .tasks__btn--mark-done {
+                color: #ea9652;
+            }
+
+            .tasks__btn--delete {
+                color: #a13538;
+            }
+
+            .tasks__btn:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        /* Task Item Completed */
+        .tasks__item--completed {
+            opacity: 0.6;
+        }
+
+        .tasks__item--completed .tasks__title {
+            text-decoration: line-through;
+        }
+    
+    /* Empty task */
+    .empty__task {
+        list-style: none;
+        text-align: center;
+        font-style: italic;
+        color: #888;
+    }
